@@ -24,6 +24,10 @@ Rails 3.2
 
     # config/application.rb
     config.schema_migrations_table_namer.schema_migrations_table_name = "a_new_table_name"
+    
+## Note
+
+You'll need a fresh db for this to work.  If you don't have one, rollback, change the config value, then re-migrate.
 
 ## Contributing
 
