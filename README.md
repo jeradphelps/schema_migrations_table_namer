@@ -22,7 +22,7 @@ Rails 3.2
 
 ## Usage
 
-    # application.rb
+    # config/application.rb
     config.schema_migrations_table_namer.schema_migrations_table_name = "a_new_table_name"
 
 ## Contributing
