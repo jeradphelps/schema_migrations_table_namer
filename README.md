@@ -22,12 +22,11 @@ When multiple rails apps share the same database schema, the schema_migrations t
 
 ## Rails versions
 
-So far, tested & used with rails 3.2
+Rails 3.2
 
 ## Usage
 
-In one of your application's initializers, add the following line:
-
+    # application.rb
     config.schema_migrations_table_namer.schema_migrations_table_name = "a_new_table_name"
 
 ## Contributing
