@@ -1,7 +1,4 @@
 Rails.application.config.after_initialize do
-  puts 'inside'
-
-
   module ActiveRecord
     class Migrator
       @@original_schema_migrations_name = ActiveRecord::Migrator.schema_migrations_table_name
@@ -15,8 +12,4 @@ Rails.application.config.after_initialize do
       end
     end
   end
-
-  puts 'done inside'
 end
-
-puts 'outside'
