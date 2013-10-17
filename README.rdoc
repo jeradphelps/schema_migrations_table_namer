@@ -1,3 +1,39 @@
-= SchemaMigrationsTableNamer
+# SchemaMigrationsTableNamer
 
-This project rocks and uses MIT-LICENSE.
+Allows configuration of the name of the schema migrations table.
+
+## Installation
+
+Add this line to your application's Gemfile:
+
+    gem 'schema_migrations_table_namer'
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install schema_migrations_table_namer
+
+## Why
+
+When multiple rails apps share the same database schema, the schema_migrations table can get a bit messy.  Changing the name of the schema migrations table allows you to use a unique table per app, making this a bit cleaner.
+
+## Rails versions
+
+So far, tested & used with rails 3.2
+
+## Usage
+
+In one of your application's initializers, add the following line:
+
+    config.schema_migrations_table_namer.schema_migrations_table_name = "a_new_table_name"
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
