@@ -6,15 +6,11 @@ Allows configuration of the name of the schema migrations table.
 
 Add this line to your application's Gemfile:
 
-    gem 'schema_migrations_table_namer'
+    gem 'schema_migrations_table_namer', :git => https://github.com/jeradphelps/schema_migrations_table_namer.git
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install schema_migrations_table_namer
 
 ## Why
 
