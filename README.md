@@ -6,7 +6,7 @@ Allows configuration of the name of the schema migrations table.
 
 Add this line to your application's Gemfile:
 
-    gem 'schema_migrations_table_namer', :git => https://github.com/jeradphelps/schema_migrations_table_namer.git
+    gem 'schema_migrations_table_namer', :git => 'https://github.com/jeradphelps/schema_migrations_table_namer.git'
 
 And then execute:
 
@@ -23,7 +23,7 @@ Rails 3.2
 ## Usage
 
     # config/application.rb
-    config.schema_migrations_table_namer.schema_migrations_table_name = "a_new_table_name"
+    config.schema_migrations_table_name = "a_new_table_name"
     
 ## Note
 
